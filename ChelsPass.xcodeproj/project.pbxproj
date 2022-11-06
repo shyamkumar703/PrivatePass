@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017F3EAA291866C900023FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EA9291866C900023FB4 /* AppDelegate.swift */; };
+		017F3EAC291866C900023FB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EAB291866C900023FB4 /* SceneDelegate.swift */; };
+		017F3EAE291866C900023FB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EAD291866C900023FB4 /* ViewController.swift */; };
+		017F3EB1291866C900023FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F3EAF291866C900023FB4 /* Main.storyboard */; };
+		017F3EB4291866C900023FB4 /* ChelsPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EB2291866C900023FB4 /* ChelsPass.xcdatamodeld */; };
+		017F3EB6291866CB00023FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017F3EB5291866CB00023FB4 /* Assets.xcassets */; };
+		017F3EB9291866CB00023FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F3EB7291866CB00023FB4 /* LaunchScreen.storyboard */; };
+		017F3EC4291866CC00023FB4 /* ChelsPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EC3291866CC00023FB4 /* ChelsPassTests.swift */; };
+		017F3ECE291866CC00023FB4 /* ChelsPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3ECD291866CC00023FB4 /* ChelsPassUITests.swift */; };
+		017F3ED0291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3ECF291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		017F3EC0291866CC00023FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 017F3E9E291866C900023FB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017F3EA5291866C900023FB4;
+			remoteInfo = ChelsPass;
+		};
+		017F3ECA291866CC00023FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 017F3E9E291866C900023FB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017F3EA5291866C900023FB4;
+			remoteInfo = ChelsPass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017F3EA6291866C900023FB4 /* ChelsPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChelsPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		017F3EA9291866C900023FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		017F3EAB291866C900023FB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		017F3EAD291866C900023FB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		017F3EB0291866C900023FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		017F3EB3291866C900023FB4 /* ChelsPass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChelsPass.xcdatamodel; sourceTree = "<group>"; };
+		017F3EB5291866CB00023FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		017F3EB8291866CB00023FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		017F3EBA291866CB00023FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017F3EBF291866CC00023FB4 /* ChelsPassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChelsPassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		017F3EC3291866CC00023FB4 /* ChelsPassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelsPassTests.swift; sourceTree = "<group>"; };
+		017F3EC9291866CC00023FB4 /* ChelsPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChelsPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		017F3ECD291866CC00023FB4 /* ChelsPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelsPassUITests.swift; sourceTree = "<group>"; };
+		017F3ECF291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelsPassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		017F3EA3291866C900023FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017F3EBC291866CC00023FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017F3EC6291866CC00023FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017F3E9D291866C900023FB4 = {
+			isa = PBXGroup;
+			children = (
+				017F3EA8291866C900023FB4 /* ChelsPass */,
+				017F3EC2291866CC00023FB4 /* ChelsPassTests */,
+				017F3ECC291866CC00023FB4 /* ChelsPassUITests */,
+				017F3EA7291866C900023FB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		017F3EA7291866C900023FB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EA6291866C900023FB4 /* ChelsPass.app */,
+				017F3EBF291866CC00023FB4 /* ChelsPassTests.xctest */,
+				017F3EC9291866CC00023FB4 /* ChelsPassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		017F3EA8291866C900023FB4 /* ChelsPass */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EA9291866C900023FB4 /* AppDelegate.swift */,
+				017F3EAB291866C900023FB4 /* SceneDelegate.swift */,
+				017F3EAD291866C900023FB4 /* ViewController.swift */,
+				017F3EAF291866C900023FB4 /* Main.storyboard */,
+				017F3EB5291866CB00023FB4 /* Assets.xcassets */,
+				017F3EB7291866CB00023FB4 /* LaunchScreen.storyboard */,
+				017F3EBA291866CB00023FB4 /* Info.plist */,
+				017F3EB2291866C900023FB4 /* ChelsPass.xcdatamodeld */,
+			);
+			path = ChelsPass;
+			sourceTree = "<group>";
+		};
+		017F3EC2291866CC00023FB4 /* ChelsPassTests */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EC3291866CC00023FB4 /* ChelsPassTests.swift */,
+			);
+			path = ChelsPassTests;
+			sourceTree = "<group>";
+		};
+		017F3ECC291866CC00023FB4 /* ChelsPassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				017F3ECD291866CC00023FB4 /* ChelsPassUITests.swift */,
+				017F3ECF291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift */,
+			);
+			path = ChelsPassUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		017F3EA5291866C900023FB4 /* ChelsPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017F3ED3291866CC00023FB4 /* Build configuration list for PBXNativeTarget "ChelsPass" */;
+			buildPhases = (
+				017F3EA2291866C900023FB4 /* Sources */,
+				017F3EA3291866C900023FB4 /* Frameworks */,
+				017F3EA4291866C900023FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChelsPass;
+			productName = ChelsPass;
+			productReference = 017F3EA6291866C900023FB4 /* ChelsPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		017F3EBE291866CC00023FB4 /* ChelsPassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017F3ED6291866CC00023FB4 /* Build configuration list for PBXNativeTarget "ChelsPassTests" */;
+			buildPhases = (
+				017F3EBB291866CC00023FB4 /* Sources */,
+				017F3EBC291866CC00023FB4 /* Frameworks */,
+				017F3EBD291866CC00023FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017F3EC1291866CC00023FB4 /* PBXTargetDependency */,
+			);
+			name = ChelsPassTests;
+			productName = ChelsPassTests;
+			productReference = 017F3EBF291866CC00023FB4 /* ChelsPassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		017F3EC8291866CC00023FB4 /* ChelsPassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017F3ED9291866CC00023FB4 /* Build configuration list for PBXNativeTarget "ChelsPassUITests" */;
+			buildPhases = (
+				017F3EC5291866CC00023FB4 /* Sources */,
+				017F3EC6291866CC00023FB4 /* Frameworks */,
+				017F3EC7291866CC00023FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017F3ECB291866CC00023FB4 /* PBXTargetDependency */,
+			);
+			name = ChelsPassUITests;
+			productName = ChelsPassUITests;
+			productReference = 017F3EC9291866CC00023FB4 /* ChelsPassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		017F3E9E291866C900023FB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					017F3EA5291866C900023FB4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					017F3EBE291866CC00023FB4 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 017F3EA5291866C900023FB4;
+					};
+					017F3EC8291866CC00023FB4 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 017F3EA5291866C900023FB4;
+					};
+				};
+			};
+			buildConfigurationList = 017F3EA1291866C900023FB4 /* Build configuration list for PBXProject "ChelsPass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 017F3E9D291866C900023FB4;
+			productRefGroup = 017F3EA7291866C900023FB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				017F3EA5291866C900023FB4 /* ChelsPass */,
+				017F3EBE291866CC00023FB4 /* ChelsPassTests */,
+				017F3EC8291866CC00023FB4 /* ChelsPassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		017F3EA4291866C900023FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017F3EB9291866CB00023FB4 /* LaunchScreen.storyboard in Resources */,
+				017F3EB6291866CB00023FB4 /* Assets.xcassets in Resources */,
+				017F3EB1291866C900023FB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017F3EBD291866CC00023FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017F3EC7291866CC00023FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		017F3EA2291866C900023FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017F3EB4291866C900023FB4 /* ChelsPass.xcdatamodeld in Sources */,
+				017F3EAE291866C900023FB4 /* ViewController.swift in Sources */,
+				017F3EAA291866C900023FB4 /* AppDelegate.swift in Sources */,
+				017F3EAC291866C900023FB4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017F3EBB291866CC00023FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017F3EC4291866CC00023FB4 /* ChelsPassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017F3EC5291866CC00023FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017F3ECE291866CC00023FB4 /* ChelsPassUITests.swift in Sources */,
+				017F3ED0291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		017F3EC1291866CC00023FB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 017F3EA5291866C900023FB4 /* ChelsPass */;
+			targetProxy = 017F3EC0291866CC00023FB4 /* PBXContainerItemProxy */;
+		};
+		017F3ECB291866CC00023FB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 017F3EA5291866C900023FB4 /* ChelsPass */;
+			targetProxy = 017F3ECA291866CC00023FB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		017F3EAF291866C900023FB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017F3EB0291866C900023FB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		017F3EB7291866CB00023FB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017F3EB8291866CB00023FB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		017F3ED1291866CC00023FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		017F3ED2291866CC00023FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		017F3ED4291866CC00023FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChelsPass/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shyamkumar.ChelsPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		017F3ED5291866CC00023FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChelsPass/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shyamkumar.ChelsPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		017F3ED7291866CC00023FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shyamkumar.ChelsPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChelsPass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChelsPass";
+			};
+			name = Debug;
+		};
+		017F3ED8291866CC00023FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shyamkumar.ChelsPassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChelsPass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChelsPass";
+			};
+			name = Release;
+		};
+		017F3EDA291866CC00023FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shyamkumar.ChelsPassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChelsPass;
+			};
+			name = Debug;
+		};
+		017F3EDB291866CC00023FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PM79C3BXFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shyamkumar.ChelsPassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChelsPass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		017F3EA1291866C900023FB4 /* Build configuration list for PBXProject "ChelsPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017F3ED1291866CC00023FB4 /* Debug */,
+				017F3ED2291866CC00023FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017F3ED3291866CC00023FB4 /* Build configuration list for PBXNativeTarget "ChelsPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017F3ED4291866CC00023FB4 /* Debug */,
+				017F3ED5291866CC00023FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017F3ED6291866CC00023FB4 /* Build configuration list for PBXNativeTarget "ChelsPassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017F3ED7291866CC00023FB4 /* Debug */,
+				017F3ED8291866CC00023FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017F3ED9291866CC00023FB4 /* Build configuration list for PBXNativeTarget "ChelsPassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017F3EDA291866CC00023FB4 /* Debug */,
+				017F3EDB291866CC00023FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		017F3EB2291866C900023FB4 /* ChelsPass.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				017F3EB3291866C900023FB4 /* ChelsPass.xcdatamodel */,
+			);
+			currentVersion = 017F3EB3291866C900023FB4 /* ChelsPass.xcdatamodel */;
+			path = ChelsPass.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 017F3E9E291866C900023FB4 /* Project object */;
+}
