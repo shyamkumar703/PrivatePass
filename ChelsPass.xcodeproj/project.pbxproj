@@ -9,14 +9,28 @@
 /* Begin PBXBuildFile section */
 		017F3EAA291866C900023FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EA9291866C900023FB4 /* AppDelegate.swift */; };
 		017F3EAC291866C900023FB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EAB291866C900023FB4 /* SceneDelegate.swift */; };
-		017F3EAE291866C900023FB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EAD291866C900023FB4 /* ViewController.swift */; };
-		017F3EB1291866C900023FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F3EAF291866C900023FB4 /* Main.storyboard */; };
 		017F3EB4291866C900023FB4 /* ChelsPass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EB2291866C900023FB4 /* ChelsPass.xcdatamodeld */; };
 		017F3EB6291866CB00023FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017F3EB5291866CB00023FB4 /* Assets.xcassets */; };
 		017F3EB9291866CB00023FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F3EB7291866CB00023FB4 /* LaunchScreen.storyboard */; };
 		017F3EC4291866CC00023FB4 /* ChelsPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EC3291866CC00023FB4 /* ChelsPassTests.swift */; };
 		017F3ECE291866CC00023FB4 /* ChelsPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3ECD291866CC00023FB4 /* ChelsPassUITests.swift */; };
 		017F3ED0291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3ECF291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift */; };
+		017F3EDE2918679A00023FB4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EDD2918679A00023FB4 /* UIViewController.swift */; };
+		017F3EE0291867C100023FB4 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EDF291867C100023FB4 /* Dependencies.swift */; };
+		017F3EE32918687E00023FB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 017F3EE22918687E00023FB4 /* GoogleService-Info.plist */; };
+		017F3EEC291869AF00023FB4 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EEB291869AF00023FB4 /* AES.swift */; };
+		017F3EEF29186B9300023FB4 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EEE29186B9300023FB4 /* Encryption.swift */; };
+		017F3EF229186D7300023FB4 /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EF129186D7300023FB4 /* PasswordsViewController.swift */; };
+		017F3EF529186DAD00023FB4 /* PasswordsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EF429186DAD00023FB4 /* PasswordsViewControllerViewModel.swift */; };
+		017F3EF72918725D00023FB4 /* Firestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3EF62918725D00023FB4 /* Firestore.swift */; };
+		017F3EFA2918747100023FB4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 017F3EF92918747100023FB4 /* FirebaseAnalytics */; };
+		017F3EFC2918747100023FB4 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 017F3EFB2918747100023FB4 /* FirebaseAnalyticsSwift */; };
+		017F3EFE2918747100023FB4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 017F3EFD2918747100023FB4 /* FirebaseAuth */; };
+		017F3F002918747100023FB4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 017F3EFF2918747100023FB4 /* FirebaseFirestore */; };
+		017F3F022918747100023FB4 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 017F3F012918747100023FB4 /* FirebaseFirestoreSwift */; };
+		017F3F04291874F900023FB4 /* EncryptedPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F03291874F900023FB4 /* EncryptedPassword.swift */; };
+		017F3F072918767400023FB4 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F062918767400023FB4 /* Session.swift */; };
+		017F3F092918771000023FB4 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F082918771000023FB4 /* Password.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +54,6 @@
 		017F3EA6291866C900023FB4 /* ChelsPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChelsPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		017F3EA9291866C900023FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017F3EAB291866C900023FB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		017F3EAD291866C900023FB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		017F3EB0291866C900023FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		017F3EB3291866C900023FB4 /* ChelsPass.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChelsPass.xcdatamodel; sourceTree = "<group>"; };
 		017F3EB5291866CB00023FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		017F3EB8291866CB00023FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +63,17 @@
 		017F3EC9291866CC00023FB4 /* ChelsPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChelsPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		017F3ECD291866CC00023FB4 /* ChelsPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelsPassUITests.swift; sourceTree = "<group>"; };
 		017F3ECF291866CC00023FB4 /* ChelsPassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChelsPassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		017F3EDD2918679A00023FB4 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		017F3EDF291867C100023FB4 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		017F3EE22918687E00023FB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		017F3EEB291869AF00023FB4 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		017F3EEE29186B9300023FB4 /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		017F3EF129186D7300023FB4 /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
+		017F3EF429186DAD00023FB4 /* PasswordsViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewControllerViewModel.swift; sourceTree = "<group>"; };
+		017F3EF62918725D00023FB4 /* Firestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firestore.swift; sourceTree = "<group>"; };
+		017F3F03291874F900023FB4 /* EncryptedPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedPassword.swift; sourceTree = "<group>"; };
+		017F3F062918767400023FB4 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		017F3F082918771000023FB4 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017F3F022918747100023FB4 /* FirebaseFirestoreSwift in Frameworks */,
+				017F3EFC2918747100023FB4 /* FirebaseAnalyticsSwift in Frameworks */,
+				017F3F002918747100023FB4 /* FirebaseFirestore in Frameworks */,
+				017F3EFE2918747100023FB4 /* FirebaseAuth in Frameworks */,
+				017F3EFA2918747100023FB4 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +129,14 @@
 		017F3EA8291866C900023FB4 /* ChelsPass */ = {
 			isa = PBXGroup;
 			children = (
+				017F3EE22918687E00023FB4 /* GoogleService-Info.plist */,
+				017F3F052918765300023FB4 /* Models */,
+				017F3EF329186D9E00023FB4 /* ViewModels */,
+				017F3EF029186D6600023FB4 /* Views */,
+				017F3EE1291867E000023FB4 /* Dependencies */,
+				017F3EDC2918678E00023FB4 /* Extensions */,
 				017F3EA9291866C900023FB4 /* AppDelegate.swift */,
 				017F3EAB291866C900023FB4 /* SceneDelegate.swift */,
-				017F3EAD291866C900023FB4 /* ViewController.swift */,
-				017F3EAF291866C900023FB4 /* Main.storyboard */,
 				017F3EB5291866CB00023FB4 /* Assets.xcassets */,
 				017F3EB7291866CB00023FB4 /* LaunchScreen.storyboard */,
 				017F3EBA291866CB00023FB4 /* Info.plist */,
@@ -130,6 +162,59 @@
 			path = ChelsPassUITests;
 			sourceTree = "<group>";
 		};
+		017F3EDC2918678E00023FB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EDD2918679A00023FB4 /* UIViewController.swift */,
+				017F3EF62918725D00023FB4 /* Firestore.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		017F3EE1291867E000023FB4 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EED29186B8100023FB4 /* Helpers */,
+				017F3EDF291867C100023FB4 /* Dependencies.swift */,
+				017F3EEE29186B9300023FB4 /* Encryption.swift */,
+				017F3F062918767400023FB4 /* Session.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		017F3EED29186B8100023FB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EEB291869AF00023FB4 /* AES.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		017F3EF029186D6600023FB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EF129186D7300023FB4 /* PasswordsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		017F3EF329186D9E00023FB4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EF429186DAD00023FB4 /* PasswordsViewControllerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		017F3F052918765300023FB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				017F3F03291874F900023FB4 /* EncryptedPassword.swift */,
+				017F3F082918771000023FB4 /* Password.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +231,13 @@
 			dependencies = (
 			);
 			name = ChelsPass;
+			packageProductDependencies = (
+				017F3EF92918747100023FB4 /* FirebaseAnalytics */,
+				017F3EFB2918747100023FB4 /* FirebaseAnalyticsSwift */,
+				017F3EFD2918747100023FB4 /* FirebaseAuth */,
+				017F3EFF2918747100023FB4 /* FirebaseFirestore */,
+				017F3F012918747100023FB4 /* FirebaseFirestoreSwift */,
+			);
 			productName = ChelsPass;
 			productReference = 017F3EA6291866C900023FB4 /* ChelsPass.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +310,9 @@
 				Base,
 			);
 			mainGroup = 017F3E9D291866C900023FB4;
+			packageReferences = (
+				017F3EF82918747100023FB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 017F3EA7291866C900023FB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +331,7 @@
 			files = (
 				017F3EB9291866CB00023FB4 /* LaunchScreen.storyboard in Resources */,
 				017F3EB6291866CB00023FB4 /* Assets.xcassets in Resources */,
-				017F3EB1291866C900023FB4 /* Main.storyboard in Resources */,
+				017F3EE32918687E00023FB4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +357,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				017F3EB4291866C900023FB4 /* ChelsPass.xcdatamodeld in Sources */,
-				017F3EAE291866C900023FB4 /* ViewController.swift in Sources */,
+				017F3EEC291869AF00023FB4 /* AES.swift in Sources */,
+				017F3EF529186DAD00023FB4 /* PasswordsViewControllerViewModel.swift in Sources */,
+				017F3F092918771000023FB4 /* Password.swift in Sources */,
 				017F3EAA291866C900023FB4 /* AppDelegate.swift in Sources */,
 				017F3EAC291866C900023FB4 /* SceneDelegate.swift in Sources */,
+				017F3F04291874F900023FB4 /* EncryptedPassword.swift in Sources */,
+				017F3EE0291867C100023FB4 /* Dependencies.swift in Sources */,
+				017F3EF229186D7300023FB4 /* PasswordsViewController.swift in Sources */,
+				017F3F072918767400023FB4 /* Session.swift in Sources */,
+				017F3EDE2918679A00023FB4 /* UIViewController.swift in Sources */,
+				017F3EEF29186B9300023FB4 /* Encryption.swift in Sources */,
+				017F3EF72918725D00023FB4 /* Firestore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +405,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		017F3EAF291866C900023FB4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				017F3EB0291866C900023FB4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		017F3EB7291866CB00023FB4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +542,7 @@
 				INFOPLIST_FILE = ChelsPass/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +570,7 @@
 				INFOPLIST_FILE = ChelsPass/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,6 +702,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		017F3EF82918747100023FB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		017F3EF92918747100023FB4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 017F3EF82918747100023FB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		017F3EFB2918747100023FB4 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 017F3EF82918747100023FB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		017F3EFD2918747100023FB4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 017F3EF82918747100023FB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		017F3EFF2918747100023FB4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 017F3EF82918747100023FB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		017F3F012918747100023FB4 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 017F3EF82918747100023FB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		017F3EB2291866C900023FB4 /* ChelsPass.xcdatamodeld */ = {

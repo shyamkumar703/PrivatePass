@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>459756872093-74qs5104tjiakoirilk52kl5vc4lob4d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.459756872093-74qs5104tjiakoirilk52kl5vc4lob4d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD3SR8PJvPNy56RQWS1xe5XUz_lFAr7ths</string>
+	<key>GCM_SENDER_ID</key>
+	<string>459756872093</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.shyamkumar.ChelsPass</string>
+	<key>PROJECT_ID</key>
+	<string>chelspass-741b8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chelspass-741b8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:459756872093:ios:4c031faeb9e97b2de74f74</string>
+</dict>
+</plist>
