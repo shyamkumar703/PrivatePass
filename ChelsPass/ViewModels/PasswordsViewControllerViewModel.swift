@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import LocalAuthentication
 
 protocol PasswordsViewControllerViewModelViewDelegate: AnyObject {
     func update(with passwords: [PasswordTableViewCellViewModel])
@@ -26,11 +27,38 @@ class PasswordsViewControllerViewModel: ViewModel {
             name: .reloadPasswords,
             object: nil
         )
-        getPasswords()
+        authenticate()
     }
     
     deinit {
         NotificationCenter.default.removeObserver(self, name: .reloadPasswords, object: nil)
+    }
+    
+    private func authenticate() {
+        let context = LAContext()
+        let biometry = context.biometryType
+        var reason = "Log in with Face ID"
+        switch biometry {
+        case .touchID:
+            reason = "Log in with Touch ID"
+        case .faceID:
+            reason = "Log in with Face ID"
+        default:
+            break
+        }
+        var error: NSError?
+        var permissions = context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error)
+        if permissions {
+            // auth
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { [weak self] success, error in
+                if success {
+                    self?.getPasswords()
+                }
+            }
+        } else {
+            // error
+            print(error)
+        }
     }
     
     @objc func getPasswords() {

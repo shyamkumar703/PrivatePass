@@ -18,6 +18,22 @@ class PasswordsViewController: ViewController<PasswordsViewControllerViewModel> 
         }
     }
     
+    lazy var filteredPasswords = passwords
+    var isSearching = false {
+        didSet(old) {
+            if isSearching != old {
+                filteredPasswords = passwords
+            }
+        }
+    }
+    
+    lazy var searchController: UISearchController = {
+        let controller = UISearchController()
+        controller.searchResultsUpdater = self
+        controller.searchBar.placeholder = "Search passwords"
+        return controller
+    }()
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.delegate = self
@@ -40,6 +56,7 @@ class PasswordsViewController: ViewController<PasswordsViewControllerViewModel> 
     func setupView() {
         viewModel?.viewDelegate = self
         
+        navigationItem.searchController = searchController
         navigationItem.title = "Passwords"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -76,12 +93,12 @@ extension PasswordsViewController: PasswordsViewControllerViewModelViewDelegate 
 
 extension PasswordsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return passwords.count
+        return isSearching ? filteredPasswords.count : passwords.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as? PasswordTableViewCell {
-            cell.viewModel = passwords[indexPath.item]
+            cell.viewModel = isSearching ? filteredPasswords[indexPath.item] : passwords[indexPath.item]
             return cell
         }
         return UITableViewCell()
@@ -92,13 +109,13 @@ extension PasswordsViewController: UITableViewDelegate, UITableViewDataSource {
             let copyAction = UIAction(title: "Copy password", image: UIImage(systemName: "doc.on.doc")) { [weak self] _ in
                 guard let self = self else { return }
                 // copy
-                UIPasteboard.general.string = self.passwords[indexPath.item].password.password
+                UIPasteboard.general.string = self.isSearching ? self.filteredPasswords[indexPath.item].password.password : self.passwords[indexPath.item].password.password
             }
             
             let editAction = UIAction(title: "Edit", image: UIImage(systemName: "pencil")) { [weak self] _ in
                 // edit
                 guard let self = self else { return }
-                let password = self.passwords[indexPath.item].password
+                let password = self.isSearching ? self.filteredPasswords[indexPath.item].password : self.passwords[indexPath.item].password
                 guard let vm = self.viewModel?.addVM(for: password) else { return }
                 DispatchQueue.main.async {
                     self.present(
@@ -111,6 +128,22 @@ extension PasswordsViewController: UITableViewDelegate, UITableViewDataSource {
             }
             
             return UIMenu(title: "", children: [copyAction, editAction])
+        }
+    }
+}
+
+// MARK: - Search
+extension PasswordsViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        isSearching = searchController.isActive
+        guard let query = searchController.searchBar.text else { return }
+        if query.isEmpty {
+            filteredPasswords = passwords
+        } else {
+            filteredPasswords = passwords.filter({ $0.password.website.contains(query) || $0.password.username.contains(query) || $0.password.password.contains(query) })
+        }
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
         }
     }
 }

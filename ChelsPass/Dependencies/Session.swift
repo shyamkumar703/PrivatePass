@@ -25,7 +25,7 @@ class SessionManager: Session {
         Firestore.get(collectionPath: "chelsea", type: EncryptedPassword.self) { result in
             switch result {
             case .success(let passwords):
-                completion(passwords.compactMap({ self.decrypt($0) }))
+                completion(passwords.compactMap({ self.decrypt($0) }).sorted(by: { $0.website < $1.website }))
             case .failure:
                 completion(nil)
             }

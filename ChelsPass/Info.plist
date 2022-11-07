@@ -19,5 +19,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>We use biometrics to log you in.</string>
 </dict>
 </plist>
