@@ -31,6 +31,16 @@
 		017F3F04291874F900023FB4 /* EncryptedPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F03291874F900023FB4 /* EncryptedPassword.swift */; };
 		017F3F072918767400023FB4 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F062918767400023FB4 /* Session.swift */; };
 		017F3F092918771000023FB4 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F082918771000023FB4 /* Password.swift */; };
+		017F3F0D2918826600023FB4 /* PasswordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F0C2918826600023FB4 /* PasswordTableViewCell.swift */; };
+		017F3F0F29188E8000023FB4 /* AddPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F0E29188E8000023FB4 /* AddPasswordViewController.swift */; };
+		017F3F1129188E9400023FB4 /* AddPasswordViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F1029188E9400023FB4 /* AddPasswordViewControllerViewModel.swift */; };
+		017F3F132918913100023FB4 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F122918913100023FB4 /* PrimaryButton.swift */; };
+		017F3F16291891C900023FB4 /* ProgressShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F15291891C900023FB4 /* ProgressShapeLayer.swift */; };
+		017F3F18291891E200023FB4 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F17291891E200023FB4 /* ProgressView.swift */; };
+		017F3F1A291891F600023FB4 /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F19291891F600023FB4 /* RotationAnimation.swift */; };
+		017F3F1C2918920900023FB4 /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F1B2918920900023FB4 /* StrokeAnimation.swift */; };
+		017F3F1E2918921900023FB4 /* StrokeColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F1D2918921800023FB4 /* StrokeColorAnimation.swift */; };
+		017F3F202918937500023FB4 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F1F2918937500023FB4 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +84,16 @@
 		017F3F03291874F900023FB4 /* EncryptedPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedPassword.swift; sourceTree = "<group>"; };
 		017F3F062918767400023FB4 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		017F3F082918771000023FB4 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		017F3F0C2918826600023FB4 /* PasswordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableViewCell.swift; sourceTree = "<group>"; };
+		017F3F0E29188E8000023FB4 /* AddPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordViewController.swift; sourceTree = "<group>"; };
+		017F3F1029188E9400023FB4 /* AddPasswordViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordViewControllerViewModel.swift; sourceTree = "<group>"; };
+		017F3F122918913100023FB4 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		017F3F15291891C900023FB4 /* ProgressShapeLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShapeLayer.swift; sourceTree = "<group>"; };
+		017F3F17291891E200023FB4 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		017F3F19291891F600023FB4 /* RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationAnimation.swift; sourceTree = "<group>"; };
+		017F3F1B2918920900023FB4 /* StrokeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
+		017F3F1D2918921800023FB4 /* StrokeColorAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeColorAnimation.swift; sourceTree = "<group>"; };
+		017F3F1F2918937500023FB4 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +213,8 @@
 		017F3EF029186D6600023FB4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				017F3EF129186D7300023FB4 /* PasswordsViewController.swift */,
+				017F3F0B2918825300023FB4 /* Components */,
+				017F3F0A2918824A00023FB4 /* Controllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				017F3EF429186DAD00023FB4 /* PasswordsViewControllerViewModel.swift */,
+				017F3F1029188E9400023FB4 /* AddPasswordViewControllerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +235,38 @@
 				017F3F082918771000023FB4 /* Password.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		017F3F0A2918824A00023FB4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				017F3EF129186D7300023FB4 /* PasswordsViewController.swift */,
+				017F3F0E29188E8000023FB4 /* AddPasswordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		017F3F0B2918825300023FB4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				017F3F14291891B900023FB4 /* ProgressView */,
+				017F3F0C2918826600023FB4 /* PasswordTableViewCell.swift */,
+				017F3F122918913100023FB4 /* PrimaryButton.swift */,
+				017F3F1F2918937500023FB4 /* SecondaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		017F3F14291891B900023FB4 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				017F3F15291891C900023FB4 /* ProgressShapeLayer.swift */,
+				017F3F17291891E200023FB4 /* ProgressView.swift */,
+				017F3F19291891F600023FB4 /* RotationAnimation.swift */,
+				017F3F1B2918920900023FB4 /* StrokeAnimation.swift */,
+				017F3F1D2918921800023FB4 /* StrokeColorAnimation.swift */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,18 +410,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017F3F16291891C900023FB4 /* ProgressShapeLayer.swift in Sources */,
 				017F3EB4291866C900023FB4 /* ChelsPass.xcdatamodeld in Sources */,
 				017F3EEC291869AF00023FB4 /* AES.swift in Sources */,
+				017F3F0D2918826600023FB4 /* PasswordTableViewCell.swift in Sources */,
+				017F3F202918937500023FB4 /* SecondaryButton.swift in Sources */,
 				017F3EF529186DAD00023FB4 /* PasswordsViewControllerViewModel.swift in Sources */,
 				017F3F092918771000023FB4 /* Password.swift in Sources */,
 				017F3EAA291866C900023FB4 /* AppDelegate.swift in Sources */,
 				017F3EAC291866C900023FB4 /* SceneDelegate.swift in Sources */,
+				017F3F132918913100023FB4 /* PrimaryButton.swift in Sources */,
 				017F3F04291874F900023FB4 /* EncryptedPassword.swift in Sources */,
 				017F3EE0291867C100023FB4 /* Dependencies.swift in Sources */,
 				017F3EF229186D7300023FB4 /* PasswordsViewController.swift in Sources */,
+				017F3F1C2918920900023FB4 /* StrokeAnimation.swift in Sources */,
+				017F3F1129188E9400023FB4 /* AddPasswordViewControllerViewModel.swift in Sources */,
 				017F3F072918767400023FB4 /* Session.swift in Sources */,
+				017F3F0F29188E8000023FB4 /* AddPasswordViewController.swift in Sources */,
 				017F3EDE2918679A00023FB4 /* UIViewController.swift in Sources */,
+				017F3F18291891E200023FB4 /* ProgressView.swift in Sources */,
 				017F3EEF29186B9300023FB4 /* Encryption.swift in Sources */,
+				017F3F1A291891F600023FB4 /* RotationAnimation.swift in Sources */,
+				017F3F1E2918921900023FB4 /* StrokeColorAnimation.swift in Sources */,
 				017F3EF72918725D00023FB4 /* Firestore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
