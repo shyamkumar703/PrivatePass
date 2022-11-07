@@ -23,6 +23,7 @@ class AddPasswordViewControllerViewModel: ViewModel {
     var website: String?
     var username:  String?
     var password: String?
+    var existingId: String?
     
     // Computed properties
     var title: String {
@@ -60,6 +61,15 @@ class AddPasswordViewControllerViewModel: ViewModel {
         self.screen = screen
     }
     
+    init(dependencies: AllDependencies, password: Password, screen: Screen = .website) {
+        self.dependencies = dependencies
+        self.website = password.website
+        self.username = password.username
+        self.password = password.password
+        self.screen = screen
+        self.existingId = password.id
+    }
+    
     func nextTapped(with text: String) {
         switch screen {
         case .website:
@@ -93,9 +103,22 @@ class AddPasswordViewControllerViewModel: ViewModel {
         guard let website = website,
               let username = username,
               let password = password else { return }
-        let passwordToSave = Password(website: website, username: username, password: password)
-        dependencies.session.addPassword(passwordToSave) { [weak self] _ in
-            self?.viewDelegate?.stopLoadingAndDismiss()
+        let passwordToSave = Password(
+            id: existingId ?? UUID().uuidString,
+            website: website,
+            username: username,
+            password: password
+        )
+        if existingId != nil {
+            dependencies.session.updatePassword(passwordToSave) { [weak self] _ in
+                NotificationCenter.default.post(name: .reloadPasswords, object: nil)
+                self?.viewDelegate?.stopLoadingAndDismiss()
+            }
+        } else {
+            dependencies.session.addPassword(passwordToSave) { [weak self] _ in
+                NotificationCenter.default.post(name: .reloadPasswords, object: nil)
+                self?.viewDelegate?.stopLoadingAndDismiss()
+            }
         }
     }
 }

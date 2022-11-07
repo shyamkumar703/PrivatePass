@@ -163,6 +163,7 @@ extension AddPasswordViewController: UITextFieldDelegate {
 // MARK: - Button actions
 extension AddPasswordViewController {
     @objc func primaryButtonTapped() {
+        UIImpactFeedbackGenerator().impactOccurred()
         guard let text = valueField.text,
               text.count != 0 else {
             return

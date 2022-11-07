@@ -11,6 +11,7 @@ import FirebaseFirestore
 protocol Session {
     func getAllPasswords(completion: @escaping ([Password]?) -> Void)
     func addPassword(_ password: Password, completion: @escaping (Bool) -> Void)
+    func updatePassword(_ password: Password, completion: @escaping (Bool) -> Void)
 }
 
 class SessionManager: Session {
@@ -38,7 +39,26 @@ class SessionManager: Session {
         }
         Firestore.set(
             encryptedPassword,
-            documentPath: "chelsea/\(UUID().uuidString)",
+            documentPath: "chelsea/\(password.id)",
+            completion: { result in
+                switch result {
+                case .success:
+                    completion(true)
+                case .failure:
+                    completion(false)
+                }
+            }
+        )
+    }
+    
+    func updatePassword(_ password: Password, completion: @escaping (Bool) -> Void) {
+        guard let encryptedPassword = encrypt(password) else {
+            completion(false)
+            return
+        }
+        Firestore.update(
+            encryptedPassword,
+            documentPath: "chelsea/\(password.id)",
             completion: { result in
                 switch result {
                 case .success:
@@ -57,7 +77,7 @@ class SessionManager: Session {
               let password = try? dependencies.encryption.decrypt(encryptedPassword.password) else {
                   return nil
         }
-        return Password(website: website, username: username, password: password)
+        return Password(id: encryptedPassword.id, website: website, username: username, password: password)
     }
     
     private func encrypt(_ password: Password) -> EncryptedPassword? {
@@ -66,6 +86,6 @@ class SessionManager: Session {
               let encryptedPassword = try? dependencies.encryption.encrypt(password.password) else {
             return nil
         }
-        return EncryptedPassword(website: encryptedWebsite, username: encryptedUsername, password: encryptedPassword)
+        return EncryptedPassword(id: password.id, website: encryptedWebsite, username: encryptedUsername, password: encryptedPassword)
     }
 }

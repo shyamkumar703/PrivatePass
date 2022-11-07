@@ -33,6 +33,10 @@ class PasswordsViewController: ViewController<PasswordsViewControllerViewModel> 
         setupConstraints()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     func setupView() {
         viewModel?.viewDelegate = self
         
@@ -93,13 +97,20 @@ extension PasswordsViewController: UITableViewDelegate, UITableViewDataSource {
             
             let editAction = UIAction(title: "Edit", image: UIImage(systemName: "pencil")) { [weak self] _ in
                 // edit
+                guard let self = self else { return }
+                let password = self.passwords[indexPath.item].password
+                guard let vm = self.viewModel?.addVM(for: password) else { return }
+                DispatchQueue.main.async {
+                    self.present(
+                        UINavigationController(
+                            rootViewController: AddPasswordViewController.withViewModel(vm)
+                        ),
+                        animated: true
+                    )
+                }
             }
             
-            let deleteAction = UIAction(title: "Delete", image: UIImage(systemName: "trash.fill"), attributes: .destructive) { [weak self] _ in
-                // delete
-            }
-            
-            return UIMenu(title: "", children: [copyAction, editAction, deleteAction])
+            return UIMenu(title: "", children: [copyAction, editAction])
         }
     }
 }

@@ -61,6 +61,18 @@ extension Firestore {
         }
     }
     
+    static func update<T: Codable>(_ object: T, documentPath: String, completion: @escaping (Result<Bool, FirestoreError>) -> Void) {
+        if let dictionary = object.asDictionary() {
+            db.document(documentPath).updateData(dictionary) { error in
+                if let error = error {
+                    completion(.failure(.setError(error.localizedDescription)))
+                } else {
+                    completion(.success(true))
+                }
+            }
+        }
+    }
+    
     // MARK: - Helpers
     static func dictionaryToCodable<T: Codable>(dict: [String: Any], decodeInto: T.Type) -> T? {
         if let data = dictionaryToJSON(dict: dict) {

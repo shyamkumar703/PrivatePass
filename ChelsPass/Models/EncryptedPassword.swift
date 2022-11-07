@@ -7,16 +7,15 @@
 
 import Foundation
 
-class Password: Codable {
+class EncryptedPassword: Codable {
     var id: String
-    var website: String
-    var username: String
-    var password: String
-    
-    init(id: String = UUID().uuidString, website: String, username: String, password: String) {
+    var website: Data
+    var username: Data
+    var password: Data
+    init(id: String, website: Data, username: Data, password: Data) {
+        self.id = id
         self.website = website
         self.username = username
         self.password = password
-        self.id = id
     }
 }

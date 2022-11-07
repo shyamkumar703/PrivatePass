@@ -41,6 +41,7 @@
 		017F3F1C2918920900023FB4 /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F1B2918920900023FB4 /* StrokeAnimation.swift */; };
 		017F3F1E2918921900023FB4 /* StrokeColorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F1D2918921800023FB4 /* StrokeColorAnimation.swift */; };
 		017F3F202918937500023FB4 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F1F2918937500023FB4 /* SecondaryButton.swift */; };
+		017F3F222918A5C800023FB4 /* NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F3F212918A5C800023FB4 /* NSNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		017F3F1B2918920900023FB4 /* StrokeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
 		017F3F1D2918921800023FB4 /* StrokeColorAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeColorAnimation.swift; sourceTree = "<group>"; };
 		017F3F1F2918937500023FB4 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		017F3F212918A5C800023FB4 /* NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				017F3EDD2918679A00023FB4 /* UIViewController.swift */,
 				017F3EF62918725D00023FB4 /* Firestore.swift */,
+				017F3F212918A5C800023FB4 /* NSNotification.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				017F3F202918937500023FB4 /* SecondaryButton.swift in Sources */,
 				017F3EF529186DAD00023FB4 /* PasswordsViewControllerViewModel.swift in Sources */,
 				017F3F092918771000023FB4 /* Password.swift in Sources */,
+				017F3F222918A5C800023FB4 /* NSNotification.swift in Sources */,
 				017F3EAA291866C900023FB4 /* AppDelegate.swift in Sources */,
 				017F3EAC291866C900023FB4 /* SceneDelegate.swift in Sources */,
 				017F3F132918913100023FB4 /* PrimaryButton.swift in Sources */,
